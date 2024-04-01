@@ -92,7 +92,6 @@
 @import "@/assets/scss/variables";
 
 section {
-  @apply xl:bg-cover;
   background: linear-gradient(
       180deg,
       rgba($color: $dark, $alpha: 0) 0%,
@@ -100,6 +99,9 @@ section {
     ),
     url("assets/images/corporate-training-waves.svg");
   background-repeat: no-repeat;
+  @media screen and (min-width: 976px) {
+    background-size: cover !important;
+  }
   .about {
     background: rgba($color: #2b2f44, $alpha: 0.9);
   }

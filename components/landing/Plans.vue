@@ -132,14 +132,18 @@ section {
     -webkit-text-fill-color: transparent;
   }
   .plans {
-    @apply xl:bg-cover py-32;
+    @apply py-32;
     background: linear-gradient(
         180deg,
         rgba($color: $dark, $alpha: 0) 0%,
         rgba($color: $dark, $alpha: 1) 95%
       ),
       url("assets/images/plan-waves.svg");
+
     background-repeat: no-repeat;
+    @media screen and (min-width: 976px) {
+      background-size: cover !important;
+    }
   }
 }
 </style>
