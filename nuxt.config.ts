@@ -57,7 +57,7 @@ export default defineNuxtConfig({
           name: "keywords",
           content: keywords.join(", "),
         },
-        { hid: "og-title", property: "og:title", content: "Rentspot" },
+        { hid: "og-title", property: "og:title", content: "Vue School" },
         { hid: "og-desc", property: "og:description", content: description },
         {
           hid: "og-type",
@@ -67,7 +67,7 @@ export default defineNuxtConfig({
         {
           hid: "og-site-name",
           property: "og:site_name",
-          content: "Rentspot",
+          content: "Vue School",
         },
         {
           hid: "twitter-card",
@@ -77,7 +77,7 @@ export default defineNuxtConfig({
         {
           hid: "twitter-title",
           name: "twitter:title",
-          content: "Rentspot",
+          content: "Vue School",
         },
         {
           hid: "twitter-desc",
