@@ -1,7 +1,7 @@
 <template>
   <section class="px-5 xl:px-3 pt-32 md:py-10 -mt-20">
     <div class="max-w-screen-xl mx-auto">
-      <div class="w-full min-h-[50vh] h-[50vh] flex items-center">
+      <div class="w-full min-h-[50vh]  flex items-center">
         <div>
           <div
             class="rounded-2xl about px-8 md:px-16 py-12 grid sm:grid-cols-12 gap-6"

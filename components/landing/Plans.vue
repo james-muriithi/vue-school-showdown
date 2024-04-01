@@ -1,5 +1,5 @@
 <template>
-  <section class="mt-32">
+  <section class="mt-20">
     <div class="text-center">
       <h2 class="title lg:w-1/2 mx-auto text-white">
         Discounted <span> Corporate Training </span>Bundles
