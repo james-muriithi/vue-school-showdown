@@ -59,7 +59,7 @@
                 <div>
                   <h3>40</h3>
                   <p class="mt-2 text-center">
-                    <img src="@/assets/images/courses.svg" class="inline h-4" />
+                    <img src="@/assets/images/courses.svg" alt="courses icon" class="inline h-4" />
                     <span class="text-gray-300 text-xs font-semibold">
                       Courses
                     </span>

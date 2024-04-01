@@ -17,7 +17,7 @@
           {{workshop.duration}}
         </p>
       </div>
-      <h5 class="text-gray-200 mt-3 text-xl">Vue.js Fundamentals</h5>
+      <h3 class="text-gray-200 mt-3 text-xl">Vue.js Fundamentals</h3>
 
       <p class="text-gray-400 text-sm mt-2 line-clamp-2">
         {{workshop.description}}

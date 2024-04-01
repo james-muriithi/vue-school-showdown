@@ -1,9 +1,9 @@
 <template>
   <div class="plan-card px-5 py-10 rounded-2xl bg-secondary shadow">
-    <h4 class="font-bold text text-white">
-      <img :src="plan.icon" class="inline h-5" />
+    <p class="font-bold text text-white">
+      <img :src="plan.icon" :alt="`${plan.title}-icon`" class="inline h-5" />
       <span class="pl-3"> {{ plan.title }} </span>
-    </h4>
+    </p>
 
     <div class="mt-10">
       <p class="text-primary text-sm mb-5">Includes 1 year access to:</p>
@@ -14,7 +14,7 @@
             v-for="(benefit, index) in plan.benefits"
             :key="`benefit-${index}-${plan.id}`"
             class="flex items-center mb-3"
-            :class="{ 'opacity-30': benefit.disabled }"
+            :class="{ 'opacity-60': benefit.disabled }"
           >
             <IconMaterialSymbols:CheckCircle class="text-primary inline" />
             <span class="pl-3"> {{ benefit.title }} </span>
@@ -70,7 +70,7 @@
           />
           <div class="mt-3 flex justify-between items-center">
             <div class="flex items-center">
-              <img src="@/assets/images/people.svg" alt="" class="h-4 inline" />
+              <img src="@/assets/images/people.svg" alt="seats" class="h-4 inline" />
               <p class="inline">
                 <span class="font-bold pl-2 text-white text-xl"> 12 </span>
                 <span class="text-gray-400 text-sm pl-2"> seats </span>

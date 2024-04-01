@@ -28,6 +28,7 @@
               v-for="link in socialMediaLinks"
               :key="link.title"
               :to="link.to"
+              :aria-label="link.title"
               class="h-12 w-12 bg-secondary rounded-full items-center justify-center flex"
             >
               <component :is="link.icon" class="text-gray-500 text-2xl" />
@@ -50,6 +51,7 @@
                 v-for="link in footerLinks[groupTitle]"
                 :key="`${groupTitle}-${link.title}`"
                 :to="link.to"
+                :aria-label="link.title"
                 class="text-sm text-gray-200 hover:text-white hover:underline transition-all block mb-2"
               >
                 {{ link.title }}
