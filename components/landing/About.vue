@@ -28,9 +28,9 @@
           </div>
           <div class="mt-10">
             <div class="hidden lg:flex justify-between flex-wrap">
-              <router-link v-for="i in 6" :key="`icon-${i}`" to="#">
+              <NuxtLink v-for="i in 6" :key="`icon-${i}`" to="#">
                 <img src="@/assets/images/google-icon.svg" alt="Google" />
-              </router-link>
+              </NuxtLink>
             </div>
           </div>
 

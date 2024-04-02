@@ -25,13 +25,13 @@
           class="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 md:flex-row md:mt-0 text-base"
         >
           <li v-for="(item, index) in menuItems" :key="item.title">
-            <router-link
+            <NuxtLink
               v-if="!item.dropdownLinks"
               :to="item.link"
               class="block py-2 px-3 text-gray-300 rounded md:bg-transparent md:p-0 hover:text-white"
             >
               {{ item.title }}
-            </router-link>
+            </NuxtLink>
             <button
               v-else
               :id="`dropdown-${index}`"
@@ -48,18 +48,18 @@
         <ul
           class="flex font-medium p-2 space-x-2 md:space-x-8 text-base items-center"
         >
-          <router-link
+          <NuxtLink
             to="#"
             class="block py-2 px-3 text-gray-300 rounded md:bg-transparent md:p-0"
           >
             Log in
-          </router-link>
-          <router-link
+          </NuxtLink>
+          <NuxtLink
             to="#"
             class="block py-3 px-7 text-primary rounded-xl md:bg-transparent signup-btn relative"
           >
             Sign up
-          </router-link>
+          </NuxtLink>
         </ul>
       </div>
     </div>

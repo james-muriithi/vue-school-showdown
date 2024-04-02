@@ -4,13 +4,13 @@
   >
     <div class="grid lg:grid-cols-11 gap-x-5 gap-y-16">
       <div class="col-span-5">
-        <router-link to="#" class="space-x-3">
+        <NuxtLink to="#" class="space-x-3">
           <img
             src="@/assets/images/logo.svg"
             class="h-16 mx-auto lg:ml-0"
             alt="Vue school Logo"
           />
-        </router-link>
+        </NuxtLink>
 
         <p class="mt-16 text-white md:pr-5">
           Thanks to fine people like you, Vue School can proudly sponsor Evan
@@ -24,7 +24,7 @@
           <div
             class="social-media-icons flex gap-x-8 mt-5 justify-center lg:justify-start"
           >
-            <router-link
+            <NuxtLink
               v-for="link in socialMediaLinks"
               :key="link.title"
               :to="link.to"
@@ -32,7 +32,7 @@
               class="h-12 w-12 bg-secondary rounded-full items-center justify-center flex"
             >
               <component :is="link.icon" class="text-gray-500 text-2xl" />
-            </router-link>
+            </NuxtLink>
           </div>
         </div>
       </div>
@@ -47,7 +47,7 @@
               {{ groupTitle }}
             </p>
             <div class="mt-2">
-              <router-link
+              <NuxtLink
                 v-for="link in footerLinks[groupTitle]"
                 :key="`${groupTitle}-${link.title}`"
                 :to="link.to"
@@ -55,7 +55,7 @@
                 class="text-sm text-gray-200 hover:text-white hover:underline transition-all block mb-2"
               >
                 {{ link.title }}
-              </router-link>
+              </NuxtLink>
             </div>
           </div>
         </div>

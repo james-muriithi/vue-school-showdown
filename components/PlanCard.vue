@@ -89,9 +89,9 @@
         </button>
       </div>
       <div class="mt-3 text-center">
-        <router-link to="#" class="text-sm font-semibold text-primary">
+        <NuxtLink to="#" class="text-sm font-semibold text-primary">
           Refer your manager
-        </router-link>
+        </NuxtLink>
       </div>
     </div>
   </div>

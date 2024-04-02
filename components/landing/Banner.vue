@@ -15,9 +15,9 @@
             Vue.js framework
           </p>
           <div class="mt-10 text-center lg:text-start">
-            <router-link to="#" class="bg-primary px-7 py-4 rounded-xl font-semibold">
+            <NuxtLink to="#" class="bg-primary px-7 py-4 rounded-xl font-semibold">
                 Talk to sales
-            </router-link>
+            </NuxtLink>
           </div>
         </div>
       </div>
